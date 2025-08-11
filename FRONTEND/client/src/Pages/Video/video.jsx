@@ -112,8 +112,7 @@ const Video = () => {
                     <div className="youtubeSelfComment">
                         <img
                             className="video_youtubeSelfCommentProfile"
-                            src="https://res.cloudinary.com/dsbxrs90o/image/upload/v1734449177/download_1_bahpzq.jpg"
-                            alt="self profile"
+                           src={data?.user?.profilePic}
                         />
                         <div className="addAComment">
                             <input
