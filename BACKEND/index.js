@@ -25,7 +25,10 @@ app.use('/commentApi',CommentRoutes);
 
 
 app.get("/", (req, res) => {
-  res.redirect("/api/allVideo");
+  res.redirect("/api/allVideo1");
+});
+app.get("/api/allVideo1", (req, res) => {
+  res.send("Hello this is my home page");
 });
 
 app.listen(port,()=>{console.log("Our backend project is running on Port 4000")});
