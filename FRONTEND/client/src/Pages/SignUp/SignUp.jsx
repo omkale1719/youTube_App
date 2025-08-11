@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './signUp.css';
+import './SignUp.css';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
