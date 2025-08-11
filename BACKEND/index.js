@@ -24,4 +24,8 @@ app.use('/api',VideoRoutes);
 app.use('/commentApi',CommentRoutes);
 
 
+app.get("/", (req, res) => {
+  res.redirect("/api/allVideo");
+});
+
 app.listen(port,()=>{console.log("Our backend project is running on Port 4000")});
