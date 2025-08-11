@@ -1,6 +1,6 @@
 // src/pages/Profile/Profile.jsx
 import React, { useState, useEffect } from 'react';
-import './profile.css';
+import './Profile.css';
 import Sidenavbar from '../../Components/SideNavbar/sidenavbar';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { Link, useParams } from 'react-router-dom';
