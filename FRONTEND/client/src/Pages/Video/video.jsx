@@ -15,7 +15,7 @@ const Video = () => {
     const [comments, setComments] = useState([]);
 
     const fetchVedioById = async () => {
-        await axios.get(`http://localhost:4000/api/getVideoById/${id}`).then((response) => {
+        await axios.get(`https://youtube-clone-1-1cwd.onrender.com/api/getVideoById/${id}`).then((response) => {
             console.log(response.data.video);
             setData(response.data.video)
             setVideoURL(response.data.video.videoLink)
