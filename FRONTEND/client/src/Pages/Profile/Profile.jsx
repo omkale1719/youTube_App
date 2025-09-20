@@ -14,11 +14,11 @@ const Profile = ({ sideNavbar }) => {
     const fetchProfileData = async () => {
         try {
            
-            const userRes = await axios.get(`http://localhost:4000/user/${id}`);
+            const userRes = await axios.get(`https://youtube-app-xd3b.onrender.com/user/${id}`);
             setUser(userRes.data);
 
             
-            const videoRes = await axios.get(`http://localhost:4000/api/${id}/channel`);
+            const videoRes = await axios.get(`https://youtube-app-xd3b.onrender.com/api/${id}/channel`);
             setData(videoRes.data.videos); 
         } catch (err) {
             console.error("Failed to fetch profile data:", err);
