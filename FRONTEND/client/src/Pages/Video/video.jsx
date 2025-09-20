@@ -15,7 +15,7 @@ const Video = () => {
     const [comments, setComments] = useState([]);
 
     const fetchVedioById = async () => {
-        await axios.get(`https://youtube-clone-1-1cwd.onrender.com/api/getVideoById/${id}`).then((response) => {
+        await axios.get(`https://youtube-app-xd3b.onrender.com/api/getVideoById/${id}`).then((response) => {
             console.log(response.data.video);
             setData(response.data.video)
             setVideoURL(response.data.video.videoLink)
@@ -25,7 +25,7 @@ const Video = () => {
     }
 
     const getCommentByVideoId = async () => {
-        await axios.get(`http://localhost:4000/commentApi/comment/${id}`).then((response) => {
+        await axios.get(`https://youtube-app-xd3b.onrender.com/commentApi/comment/${id}`).then((response) => {
             console.log(response);
             setComments(response.data.comments)
         }).catch(err => {
@@ -46,7 +46,7 @@ const Video = () => {
     try {
         const body = { message };
         const resp = await axios.post(
-            `http://localhost:4000/commentApi/comment/${id}`,
+            `https://youtube-app-xd3b.onrender.com/commentApi/comment/${id}`,
             body,
             { withCredentials: true }
         );

@@ -67,7 +67,7 @@ const VideoUpload = () => {
       const token = localStorage.getItem('token');   // JWT token from login
 
       await axios.post(
-        'http://localhost:4000/api/video',
+        'https://youtube-app-xd3b.onrender.com/api/video',
         {
           ...inputField,
           userId: userId 

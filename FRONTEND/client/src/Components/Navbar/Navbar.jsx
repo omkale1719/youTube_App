@@ -49,7 +49,7 @@ const Navbar = ({setSideNavbarFunc,sideNavbar}) => {
   }
 
   const getLogoutFun = async()=>{
-    axios.post("http://localhost:4000/auth/logout",{},{ withCredentials: true}).then((res)=>{
+    axios.post("https://youtube-app-xd3b.onrender.com/auth/logout",{},{ withCredentials: true}).then((res)=>{
       console.log("Logout ")
     }).catch(err=>{
       console.log(err)

@@ -27,7 +27,7 @@ const Homepage = ({sideNavbar}) => {
 const [data,setData]=useState([]);
 
 useEffect(() => {
-    axios.get('https://youtube-clone-1-1cwd.onrender.com/api/allVideo').then(res => {
+    axios.get('https://youtube-app-xd3b.onrender.com/api/allVideo').then(res => {
       console.log(res.data.videos)
       setData(res.data.videos);
     }).catch(err => {

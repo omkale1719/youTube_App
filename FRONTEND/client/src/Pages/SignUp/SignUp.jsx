@@ -61,7 +61,7 @@ const SignUp = () => {
     setProgressBar(true);
     try {
       const res = await axios.post(
-        'https://youtube-clone-1-1cwd.onrender.com/auth/signUp',
+        'https://youtube-app-xd3b.onrender.com/auth/signUp',
         signUpField
       );
       toast.success('Signup successful!');
