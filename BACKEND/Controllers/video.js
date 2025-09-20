@@ -1,18 +1,17 @@
-const Video = require('../Modals/video'); // make sure path is correct
+const Video = require('../Modals/video'); 
 
-// Upload new video
 exports.uploadVideo = async (req, res) => {
   try {
     const { title, description, videoLink, thumbnail, videoType, userId } = req.body;
 
-    // Validate required fields
+    
     if (!title || !videoLink || !thumbnail || !userId) {
       return res.status(400).json({ success: false, message: "Missing required fields" });
     }
 
-    // Create new video document
+    
     const videoUpload = new Video({
-      user: req.user._id, // If using JWT, replace with req.user.id
+      user: req.user._id, 
       title,
       description,
       videoLink,
@@ -29,7 +28,7 @@ exports.uploadVideo = async (req, res) => {
   }
 };
 
-// Get all videos
+
 exports.getAllVideo = async (req, res) => {
   try {
     const videos = await Video.find()
@@ -40,7 +39,7 @@ exports.getAllVideo = async (req, res) => {
   }
 };
 
-// Get video by ID
+
 exports.getVideoById = async (req, res) => {
   try {
     const { id } = req.params;
@@ -57,7 +56,7 @@ exports.getVideoById = async (req, res) => {
   }
 };
 
-// Get all videos by user ID
+
 exports.getAllVideoByUserID = async (req, res) => {
   try {
     const { userId } = req.params;

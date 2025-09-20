@@ -120,7 +120,7 @@ const Video = () => {
                                 className="addAcommentInput"
                                 placeholder="Add A Comment..."
                                 value={message}
-                                onChange={(e) => setMessage(e.target.value)} // FIXED HERE
+                                onChange={(e) => setMessage(e.target.value)} 
                             />
                             <div className="cancelSubmitComment">
                                 <div className="cancelComment" onClick={() => setMessage("")}>Cancel</div>
@@ -149,7 +149,7 @@ const Video = () => {
                 </div>
             </div>
 
-            {/* Video Suggestions (unchanged) */}
+           
           <div className="videoSuggestions">
   {/* Example Video Suggestion Block */}
   <div className="videoSuggestionsBlock">

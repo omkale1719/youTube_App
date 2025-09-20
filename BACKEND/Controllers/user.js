@@ -4,8 +4,8 @@ const jwt = require('jsonwebtoken');
 
 const cookieOptions = {
     httpOnly: true,
-    secure: false,         // HTTPS साठी
-    sameSite: 'Lax'      // cross-site request मध्ये cookie allow करण्यासाठी
+    secure: false,         
+    sameSite: 'Lax'      
 };
 
 exports.signUp = async (req, res) => {

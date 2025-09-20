@@ -42,7 +42,7 @@ const Sidenavbar = ({sideNavbar}) => {
 
                 </div>
 
-                {/* Please watch the video for the code} */}
+               
 
                 <div className={`home_sideNavbarTopOption`} >
                     <PlaylistAddIcon />
@@ -58,7 +58,7 @@ const Sidenavbar = ({sideNavbar}) => {
                     <div className="home_sideNavbarTopOptionTitle">Watch later</div>
                 </div>
 
-                {/* Please watch the video for the code} */}
+              
 
                 
                 <div className={`home_sideNavbarTopOption }`}>

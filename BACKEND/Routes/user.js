@@ -11,7 +11,7 @@ router.post('/login',UserController.signIn);
 router.post('/logout',UserController.logout);
 
 
-// Get user by ID
+
 router.get('/:id', async (req, res) => {
     try {
         const user = await User.findById(req.params.id)

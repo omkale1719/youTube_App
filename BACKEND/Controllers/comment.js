@@ -1,6 +1,6 @@
 const Comment = require('../Modals/comment');
 
-// ➤ Add a new comment
+
 exports.addComment = async (req, res) => {
     try {
         let { video, message } = req.body;
@@ -21,7 +21,7 @@ exports.addComment = async (req, res) => {
     }
 };
 
-// ➤ Get all comments for a specific video
+
 exports.getCommentByVideoId = async (req, res) => {
   try {
     const { videoId } = req.params;

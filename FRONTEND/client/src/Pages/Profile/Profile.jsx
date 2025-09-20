@@ -1,4 +1,4 @@
-// src/pages/Profile/Profile.jsx
+
 import React, { useState, useEffect } from 'react';
 import './Profile.css';
 import Sidenavbar from '../../Components/SideNavbar/sidenavbar';
@@ -13,13 +13,13 @@ const Profile = ({ sideNavbar }) => {
 
     const fetchProfileData = async () => {
         try {
-            // Fetch user profile
+           
             const userRes = await axios.get(`http://localhost:4000/user/${id}`);
             setUser(userRes.data);
 
-            // Fetch videos of user
+            
             const videoRes = await axios.get(`http://localhost:4000/api/${id}/channel`);
-            setData(videoRes.data.videos); // because backend sends { success, videos }
+            setData(videoRes.data.videos); 
         } catch (err) {
             console.error("Failed to fetch profile data:", err);
         }

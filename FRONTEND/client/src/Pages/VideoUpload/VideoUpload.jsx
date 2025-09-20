@@ -18,7 +18,7 @@ const VideoUpload = () => {
   const [loader, setLoader] = useState(false);
   const navigate = useNavigate();
 
-  // Handle text input
+  
   const handleInputField = (event, name) => {
     setInputField({
       ...inputField,
@@ -26,7 +26,7 @@ const VideoUpload = () => {
     });
   };
 
-  // Upload file to Cloudinary
+  
   const uploadImage = async (e, type) => {
     setLoader(true);
     const files = e.target.files;
@@ -53,7 +53,7 @@ const VideoUpload = () => {
     }
   };
 
-  // Submit to backend
+  
   const handleSubmitFunc = async () => {
     const { title, description, videoLink, thumbnail, videoType } = inputField;
 
@@ -63,8 +63,8 @@ const VideoUpload = () => {
     }
 
     try {
-      const userId = localStorage.getItem('userId'); // Stored at login
-      const token = localStorage.getItem('token');   // JWT token from login
+      const userId = localStorage.getItem('userId'); 
+      const token = localStorage.getItem('token');   
 
       await axios.post(
         'https://youtube-app-xd3b.onrender.com/api/video',
